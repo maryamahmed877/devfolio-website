@@ -1,0 +1,415 @@
+body {
+    background-color: #f5f5f5;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ------------------------------nav----------------- */
+.navbar {
+    background-color: rgb(0, 0, 0);
+}
+
+/* nav media */
+
+@media (min-width:768px) {
+    .navbar li {
+        position: relative;
+    }
+
+    .navbar li::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 15px;
+        width: 0%;
+        height: 2px;
+        background-color: white;
+    }
+
+    .navbar li:hover::after {
+        width: 65%;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+
+/* ------------------------------header-------------- */
+header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+header span::after {
+    content: "|";
+    animation-name: header-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes header-animation {
+
+    /* Developer */
+    0% {
+        content: "|";
+    }
+
+    3% {
+        content: "D|";
+    }
+
+    7% {
+        content: "De|";
+    }
+
+    10% {
+        content: "Dev|";
+    }
+
+    13% {
+        content: "Devl|";
+    }
+
+    15% {
+        content: "Devlo|";
+    }
+
+    17% {
+        content: "Devlop|";
+    }
+
+    20% {
+        content: "Devlope|";
+    }
+
+    24% {
+        content: "Devloper|";
+    }
+
+    25% {
+        content: "Devlope|";
+    }
+
+    27% {
+        content: "Devlop|";
+    }
+
+    30% {
+        content: "Devlo|";
+    }
+
+    32% {
+        content: "Devl|";
+    }
+
+    35% {
+        content: "Dev|";
+    }
+
+    37% {
+        content: "De|";
+    }
+
+    40% {
+        content: "D|";
+    }
+
+    42% {
+        content: "|";
+    }
+
+    /* Freelancer| */
+    45% {
+        content: "|";
+    }
+
+    47% {
+        content: "F|";
+    }
+
+    50% {
+        content: "Fr|";
+    }
+
+    52% {
+        content: "Fre|";
+    }
+
+    55% {
+        content: "Free|";
+    }
+
+    57% {
+        content: "Freel|";
+    }
+
+    60% {
+        content: "Freela|";
+    }
+
+    62% {
+        content: "Freelan|";
+    }
+
+    65% {
+        content: "Freelanc|";
+    }
+
+    67% {
+        content: "Freelance|";
+    }
+
+    70% {
+        content: "Freelancer|";
+    }
+
+    72% {
+        content: "Freelance|";
+    }
+
+    75% {
+        content: "Freelanc|";
+    }
+
+    77% {
+        content: "Freelan|";
+    }
+
+    80% {
+        content: "Freela|";
+    }
+
+    82% {
+        content: "Free|";
+    }
+
+    85% {
+        content: "Fre|";
+    }
+
+    87% {
+        content: "Fr|";
+    }
+
+    90% {
+        content: "F|";
+    }
+
+    92% {
+        content: "|";
+    }
+}
+
+/* ------------------------------about--------------- */
+.about2 p {
+    font-size: 18px;
+}
+
+h5 {
+    position: relative;
+}
+
+h5::before {
+    content: "";
+    width: 15%;
+    height: 3px;
+    background-color: #0078ff;
+    position: absolute;
+    bottom: 0;
+
+}
+
+.progress,
+.progress-stacked {
+    background-color: #CDE1F8;
+    border-radius: 0;
+    height: 0.7rem;
+}
+
+/*-------------------------------Services------------  */
+.cards .icon {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: #0078ff solid 10px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.cards .item:hover .icon {
+    background-color: #0078ff;
+    color: #fff;
+    border-color: #CDE1F8;
+}
+
+.line {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+}
+
+/* --------------------------------counter------------- */
+.counter {
+    background-image: linear-gradient(#0077ffbd, #0077ffbd), url(../images/post-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.counter .icon {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: rgb(205, 225, 248) solid 10px;
+    border-radius: 50%;
+}
+
+/* -------------------------------Portfolio------------ */
+.Portfolio .card img {
+    transition: all 1s;
+    overflow: clip;
+
+}
+
+.Portfolio .card:hover img {
+    transform: scale(1.3);
+}
+
+/*--------------------------------slider--------------  */
+
+.slider {
+    background-image: linear-gradient(#0077ffbd, #0077ffbd), url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.my-slide img {
+    width: 120px;
+    height: 120px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators {
+    bottom: 35px;
+}
+
+/* ---------------------------------blog-------------------- */
+.card-footer img {
+    width: 30px;
+    height: 30px;
+}
+
+.card-body h4 {
+    transition: all 0.5s;
+}
+
+.card-body h4:hover {
+    color: #0078FF;
+}
+
+.card-footer .footer-left span {
+    transition: all 0.5s;
+}
+
+.card-footer .footer-left span:hover {
+    color: #0078FF;
+}
+
+
+.card-category-box {
+    position: absolute;
+    text-align: center;
+    top: -16px;
+    left: 15px;
+    right: 15px;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.card-category {
+    display: inline-block;
+    color: #fff;
+    padding: 0 15px 5px;
+    overflow: hidden;
+    background-color: #0078ff;
+    border-radius: 4px;
+}
+
+.card-category .category {
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1px;
+    margin-bottom: 0;
+}
+
+/* ----------------------------------contact us -------------- */
+.contact-icons .contact-icon {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: #0078FF solid 3px;
+    transition: all 0.3s;
+}
+
+.contact-icons .contact-icon:hover {
+    color: #fff;
+    background-color: #0078FF;
+    border-color: #CDE1F8;
+}
+
+.contact {
+    background-image: linear-gradient(#0077ffbd, #0077ffbd), url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact button {
+    border: 3px solid transparent;
+    transition: all 0.5s;
+
+}
+
+.contact button:hover {
+    background-color: #419aff;
+    border: 3px solid #CDE1F8;
+}
+
+/* --------------------------------footer---------------------- */
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer .inner {
+    background-color: #0062D3;
+}
